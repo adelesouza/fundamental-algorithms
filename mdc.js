@@ -11,10 +11,9 @@ if (a > b) {
 }
 
 for (let i = theGreatestNumber; i > 0; i--) {
-    console.log(theGreatestNumber)
-    console.log(i)
     if ((a % i == 0) && (b%i == 0)) {
         mdc = i
+        break
     }
 }
 
