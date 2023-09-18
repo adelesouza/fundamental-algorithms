@@ -1,7 +1,7 @@
 const n = 15
 let nIsPrime = null
 
-for (let i = 0; i <= n; i++) {
+for (let i = 1; i <= n; i++) {
     if (n%i == 0) {
         if (i == 1 || i == n) {
             nIsPrime = true;
