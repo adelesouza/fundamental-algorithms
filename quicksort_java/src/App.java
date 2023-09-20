@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
-        ArrayList arrayToOrdenate = new ArrayList();
+        ArrayList<Integer> arrayToOrdenate = new ArrayList<Integer>();
 
         arrayToOrdenate.add(2);
         arrayToOrdenate.add(6);
@@ -17,14 +17,14 @@ public class App {
         System.out.println(quickSort(arrayToOrdenate));
     }
 
-    public static ArrayList quickSort(ArrayList arrayToOrdenate) {
+    public static ArrayList<Integer> quickSort(ArrayList<Integer> arrayToOrdenate) {
         if (arrayToOrdenate.size() <= 1) {
             return arrayToOrdenate;
         }
 
         int pivot = (int) arrayToOrdenate.get(0);
-        ArrayList leftArray = new ArrayList<>();
-        ArrayList rightArray = new ArrayList<>();
+        ArrayList<Integer>  leftArray = new ArrayList<>();
+        ArrayList<Integer>  rightArray = new ArrayList<>();
 
         for (int i=0 ; i < arrayToOrdenate.size(); i++) {
             if ((int)arrayToOrdenate.get(i) < pivot) {
