@@ -7,20 +7,59 @@
 </head>
 <body>
     <h1>Algoritmos Fundamentais</h1>
-    <h2>Clique no algoritmo que você deseja executar:</h2>
-    <h4>Selecione a linguagem:</h4>
-    <select name="language" id="language-select">
-        <option value="java">Java</option>
-        <option value="javascript">JavaScript</option>
-    </select>
-    <ul>
-        <li><button>Fibonnaci</button></li>
-        <li><button>Contador de Inteiros</button></li>
-        <li><button>Cálculo de MDC</button></li>
-        <li><button>Primo ou Não Primo?</button></li>
-        <li><button>Quicksort</button></li>
-        <li><button>Soma dos Números</button></li>
-    </ul>
+    <form method="get">
+        <h4>Selecione a linguagem:</h4>
+        <select name="language" id="language-select">
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+        <h4>Selecione o algoritmo:</h4>
+        <select name="algorithm" id="algorithm-select">
+            <option value="fibonacci">Fibonnaci</option>
+            <option value="contador">Contador de Inteiros</option>
+            <option value="mdc">Cálculo de MDC</option>
+            <option value="primo">Primo ou Não Primo?</option>
+            <option value="quicksort">Quicksort</option>
+            <option value="soma">Soma dos Números</option>
+        </select>
+        <button type="submit">Executar</button>
+    </form>
     <hr>
 </body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const language = urlParams.get("language") 
+    const algorithm = urlParams.get("algorithm") 
+    
+
+    if (language == 'javascript') {
+        if (algorithm == 'fibonacci') {
+            window.location.href = "./fibonacci-js.html"
+        } if (algorithm == "contador" ) {
+            window.location.href = "./contador-js.html"
+        } if (algorithm == "mdc" ) {
+            window.location.href = "./mdc-js.html"
+        } if (algorithm == "primo") {
+            window.location.href = "./primo-js.html"
+        } if (algorithm == "quicksort") {
+            window.location.href = "./quicksort-js.html"
+        } if (algorithm == "soma") {
+            window.location.href = "./soma-js.html"
+        }
+    }  if (language == 'java') {
+        if (algorithm == "fibonacci") {
+            window.location.href = "https://replit.com/@adelesouza/fundamental-algorithms#Main.java"
+        } if (algorithm == "contador" ) {
+            
+        } if (algorithm == "mdc" ) {
+            
+        } if (algorithm == "primo") {
+            
+        } if (algorithm == "quicksort") {
+            
+        } if (algorithm == "soma") {
+            
+        }
+    }
+</script>
 </html>
