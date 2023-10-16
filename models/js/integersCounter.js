@@ -1,13 +1,19 @@
-const values = [56, 1.5, 2, 998.887, 13, 47.8, 39]
-const N = values.length
-let value
-let counter = 0
+function submit() {
+    const input_value = document.getElementById('input').value
+    const answer_container = document.getElementById('answer-container')
 
-for (let i = 0; i < N; i++) {
-    value = values[i]
-    if (Number.isInteger(value)) {
-        counter++
+    const values =  input_value.split(',')
+    const N = values.length
+    let value
+    let counter = 0
+
+    for (let i = 0; i < N; i++) {
+        value = parseFloat(values[i])
+        if (Number.isInteger(value)) {
+            counter++
+        }
     }
-}
 
-console.log("In this number set exists "+ counter + " integers numbers.")
+    console.log("In this number set exists "+ counter + " integers numbers.")
+    answer_container.innerText = "Nesse conjunto de dados existem " + counter + " inteiros."
+}

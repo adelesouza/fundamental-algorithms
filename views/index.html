@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algoritmos Fundamentais</title>
+    <link rel="stylesheet" href="./style-index.css">
 </head>
 <body>
-    <h1>Algoritmos Fundamentais</h1>
+    <div id="cabecalho">
+        <h1>Algoritmos Fundamentais</h1>
+    </div>
     <form method="get">
         <h4>Selecione a linguagem:</h4>
         <select name="language" id="language-select">
@@ -24,13 +27,12 @@
         </select>
         <button type="submit">Executar</button>
     </form>
-    <hr>
 </body>
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search)
     const language = urlParams.get("language") 
     const algorithm = urlParams.get("algorithm") 
-    
+
 
     if (language == 'javascript') {
         if (algorithm == 'fibonacci') {
@@ -50,15 +52,15 @@
         if (algorithm == "fibonacci") {
             window.location.href = "https://replit.com/@adelesouza/fundamental-algorithms#Main.java"
         } if (algorithm == "contador" ) {
-            
+            window.location.href = "https://replit.com/@adelesouza/integersCounterjava"
         } if (algorithm == "mdc" ) {
-            
+            window.location.href = "https://replit.com/@adelesouza/mdcjava"
         } if (algorithm == "primo") {
-            
+            window.location.href = "https://replit.com/@adelesouza/primeNumvberjava"
         } if (algorithm == "quicksort") {
-            
+            window.location.href = "https://replit.com/@adelesouza/quicksortjava"
         } if (algorithm == "soma") {
-            
+            window.location.href = "https://replit.com/@adelesouza/sumjava#Main.java"
         }
     }
 </script>

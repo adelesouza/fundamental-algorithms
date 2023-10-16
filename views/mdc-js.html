@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h3>MDC</h3>
+    <div id="cabecalho">
+        <a href="/home/adele/Desktop/fundamental-algorithms/views/index.html">Home</a>
+    </div>
+    <div id="corpo">
+        <h2>Calculadora de MDC</h2>
+        <label for="input">Digite o primeiro valor inteiro:</label>
+        <input type="number" id="input1">
+        <label for="input">Digite o segundo valor inteiro:</label>
+        <input type="number" id="input2">
+        <button onclick="submit()">Executar</button>
+        <h3 id="answer-container"></h3>
+</div>
 </body>
+<script src="/home/adele/Desktop/fundamental-algorithms/models/js/mdc.js"></script>
 </html>

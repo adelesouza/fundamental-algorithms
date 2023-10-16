@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h3>Soma</h3>
+    <div id="cabecalho">
+        <a href="/home/adele/Desktop/fundamental-algorithms/views/index.html">Home</a>
+    </div>
+    <div id="corpo">
+        <h2>Somatório do Conjunto de Números</h2>
+        <label for="input">Digite os valores a serem somados, separados por vírgula:</label>
+        <input type="text" id="input" name="input">
+        <button onclick="submit()">Executar</button>
+        <h3 id="answer-container"></h3>
+    </div>
 </body>
+<script src="/home/adele/Desktop/fundamental-algorithms/models/js/sum.js"></script>
 </html>
