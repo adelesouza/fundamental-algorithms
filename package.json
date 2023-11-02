@@ -1,0 +1,25 @@
+{
+  "name": "fundamental-algorithms",
+  "version": "1.0.0",
+  "description": "(Projeto de fins acadêmicos)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adelesouza/fundamental-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adelesouza/fundamental-algorithms/issues"
+  },
+  "homepage": "https://github.com/adelesouza/fundamental-algorithms#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
