@@ -5,6 +5,14 @@ function submit() {
     
     const a = input1_value
     const b = input2_value
+
+    const mdc = mdcFunction(a,b)
+    
+    console.log("MDC is " + mdc)
+    answer_container.innerText = "O MDC é: " + mdc
+}
+
+function mdcFunction(a, b) {
     let mdc
     
     let theGreatestNumber 
@@ -21,7 +29,8 @@ function submit() {
             break
         }
     }
-    
-    console.log("MDC is " + mdc)
-    answer_container.innerText = "O MDC é: " + mdc
+
+    return mdc
 }
+
+module.exports = mdcFunction

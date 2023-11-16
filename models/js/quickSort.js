@@ -1,8 +1,13 @@
 function submit() {
     const input_value = document.getElementById('input').value
-const answer_container = document.getElementById('answer-container')
+    const answer_container = document.getElementById('answer-container')
 
-let arrayToOrdenate = input_value.split(',')
+    let arrayToOrdenate = input_value.split(',')
+
+    console.log(quickSort(arrayToOrdenate))
+    answer_container.innerText = "Números ordenados: " + quickSort(arrayToOrdenate)
+}
+
 
 function quickSort(arrayToOrdenate) {
     let pivot = parseFloat(arrayToOrdenate[0])
@@ -25,6 +30,4 @@ function quickSort(arrayToOrdenate) {
     }
 }
 
-console.log(quickSort(arrayToOrdenate))
-answer_container.innerText = "Números ordenados: " + quickSort(arrayToOrdenate)
-}
+module.exports = quickSort
